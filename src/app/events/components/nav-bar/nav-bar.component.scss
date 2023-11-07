@@ -1,0 +1,32 @@
+@import 'src/app/styles/_variables.scss';
+
+:host {
+  position: sticky;
+  display: block;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+    background-color: $primary-color;
+    height: $navbar-height;
+
+    .search-container {
+      input {
+        width: 12rem;
+        padding: 0.5rem;
+      }
+    }
+
+    .cart-container {
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+  }
+}

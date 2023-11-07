@@ -1,0 +1,8 @@
+<div class="event-card" matTooltip="Add to cart">
+  <h5 class="event-title" [title]="event.title">{{ event.title }}</h5>
+  <img class="event-image" appImgFallback="assets/fallback.jpg" [src]="event.flyerFront" alt="Event image" />
+  <div class="event-time">
+    <p>| Starts: {{ event.startTime | date : "dd.MM.yyyy', ' hh:mm" }}</p>
+    <p>| Ends: {{ event.endTime | date : "dd.MM.yyyy', ' hh:mm" }}</p>
+  </div>
+</div>
