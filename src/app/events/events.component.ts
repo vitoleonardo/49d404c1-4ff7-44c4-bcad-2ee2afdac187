@@ -57,7 +57,7 @@ export class EventsComponent implements OnInit, AfterViewChecked {
     });
   }
 
-  public openMaps(event: FilmEvent) {
+  public openMaps(event: FilmEvent): void {
     window.open(event.venue.direction, '_blank');
   }
 

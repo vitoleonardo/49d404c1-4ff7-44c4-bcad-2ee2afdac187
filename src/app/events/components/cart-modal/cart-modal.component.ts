@@ -15,7 +15,7 @@ import { RemoveEventFromCart } from '../../state/events.action';
 export class ShoppingCartModalComponent {
   constructor(@Inject(MAT_DIALOG_DATA) public data$: Observable<ShoppingCart>, public store: Store) {}
 
-  public removeFromCart(eventId: string) {
+  public removeFromCart(eventId: string): void {
     this.store.dispatch(new RemoveEventFromCart(eventId));
   }
 }
