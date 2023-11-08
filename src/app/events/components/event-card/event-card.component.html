@@ -1,7 +1,11 @@
-<div class="event-card" matTooltip="Add to cart">
+<div class="event-card">
   <h5 class="event-title" [title]="event.title">{{ event.title }}</h5>
-  <img class="event-image" appImgFallback="assets/fallback.jpg" [src]="event.flyerFront" alt="Event image" />
-  <div class="event-time">
+  <img class="event-image" appImgFallback="assets/fallback.jpg" [src]="event.flyerFront" alt="Event flyer" loading="lazy" />
+  <div class="event-footer">
+    <div class="event-location">
+      <a>{{ event.venue.name }}</a>
+      <div class="map"><mat-icon>map</mat-icon></div>
+    </div>
     <p>| Starts: {{ event.startTime | date : "dd.MM.yyyy', ' hh:mm" }}</p>
     <p>| Ends: {{ event.endTime | date : "dd.MM.yyyy', ' hh:mm" }}</p>
   </div>

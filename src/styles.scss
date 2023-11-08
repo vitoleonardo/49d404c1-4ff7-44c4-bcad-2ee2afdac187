@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'material-icons/iconfont/material-icons.css';
-
+@import 'ngx-toastr/toastr';
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 html,
 body {
@@ -9,4 +9,25 @@ body {
 body {
   margin: 0;
   font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+mat-icon,
+button,
+app-event-card {
+  &:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+    z-index: 1;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    opacity: 0.8;
+    z-index: 1;
+  }
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }

@@ -1,8 +1,10 @@
 <div class="navbar">
   <div class="search-container">
-    <input type="text" placeholder="Search..." />
+    <input type="text" placeholder="Search..." [formControl]="searchControl" />
+    <button class="clear-button" (click)="clearSearch()">X</button>
   </div>
-  <div class="cart-container">
-    <mat-icon class="material-symbols-outlined">shopping_cart</mat-icon>
+  <div class="cart-container" (click)="onShoppingCartClicked.emit()">
+    <span *ngIf="shoppingCartAmount$ | async as amount">{{ shoppingCartAmount$ | async }}</span>
+    <mat-icon>shopping_cart</mat-icon>
   </div>
 </div>

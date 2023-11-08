@@ -1,4 +1,4 @@
-<app-nav-bar></app-nav-bar>
+<app-nav-bar [shoppingCartAmount$]="shoppingCartAmount$" (onShoppingCartClicked)="openShoppingCartDialog()"></app-nav-bar>
 
 <div class="content">
   <h1>Public Events</h1>
@@ -7,7 +7,15 @@
     <p>{{ firstVisibleDate | date : 'EE LLL dd yyyy' | uppercase }}</p>
   </div>
 
-  <div class="events">
-    <app-event-card *ngFor="let event of events; let i = index" #eventCard [event]="event"></app-event-card>
+  <div class="events" *ngIf="events$ | async as events">
+    <app-event-card
+      @fadeInOut
+      [matTooltip]="getTooltipText()"
+      *ngFor="let event of events"
+      #eventCard
+      [event]="event"
+      (click)="addToCart(event)"
+      (contextmenu)="openMaps(event)"></app-event-card>
   </div>
+  <p class="copy-right">Made by Viktor K. ©</p>
 </div>

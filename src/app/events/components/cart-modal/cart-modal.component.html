@@ -1,0 +1,21 @@
+<h2>Shopping Cart</h2>
+<ul *ngIf="data$ | async as cart">
+  <li *ngFor="let event of cart.events" @fadeInOut>
+    <div class="film-event-list-item">
+      <div class="title">{{ event.title }}</div>
+      <img class="thumbnail" appImgFallback="assets/fallback.jpg" [src]="event.flyerFront" alt="Thumbnail" />
+      <div class="dates">
+        <div>Start: {{ event.startTime | date : 'short' }}</div>
+        <div>End: {{ event.endTime | date : 'short' }}</div>
+      </div>
+      <button class="remove-button" (click)="removeFromCart(event._id)">
+        <span>R</span>
+        <span>E</span>
+        <span>M</span>
+        <span>O</span>
+        <span>V</span>
+        <span>E</span>
+      </button>
+    </div>
+  </li>
+</ul>

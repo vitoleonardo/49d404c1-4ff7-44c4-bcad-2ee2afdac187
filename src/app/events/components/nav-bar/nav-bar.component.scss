@@ -16,9 +16,30 @@
     height: $navbar-height;
 
     .search-container {
+      position: relative;
+
+      .clear-button {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: $primary-color;
+        border: none;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        cursor: pointer;
+      }
       input {
         width: 12rem;
         padding: 0.5rem;
+        border-radius: 0.25rem;
+
+        &.hover {
+          border: 1px solid #ccc;
+        }
       }
     }
 

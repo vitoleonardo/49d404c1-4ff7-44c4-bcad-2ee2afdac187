@@ -9,6 +9,23 @@
     justify-content: center;
     margin: 0 10rem;
 
+    .copy-right {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #666;
+      margin: 1rem 0;
+    }
+
+    h1 {
+      font-family: 'Star Jedi', sans-serif;
+      font-size: 3em;
+      color: $primary-color;
+      text-align: center;
+      transform: skewX(10deg);
+      text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+      margin: 2rem 0;
+    }
+
     .date-banner {
       top: $navbar-height;
       display: block;
