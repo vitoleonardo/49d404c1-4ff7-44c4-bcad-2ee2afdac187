@@ -29,3 +29,5 @@ Die Events App ist eine Anwendung, die es Benutzern ermöglicht, Events zu durch
 - `rxjs`: Eine Bibliothek für reaktive Programmierung mit Observables.
 - `tslib`: Eine Runtime-Bibliothek für TypeScript, die Hilfsfunktionen enthält.
 - `zone.js`: Eine Bibliothek, die eine Zone-basierte Ausführungsumgebung für JavaScript bereitstellt, die für die Änderungserkennung in Angular benötigt wird.
+
+![Screenshot of the app](demo.png)
