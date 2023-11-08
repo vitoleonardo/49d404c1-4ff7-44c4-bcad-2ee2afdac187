@@ -1,27 +1,31 @@
-# EventsApp
+# Events App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.9.
+Die Events App ist eine Anwendung, die es Benutzern ermöglicht, Events zu durchsuchen, zu sortieren und zu ihrem Warenkorb hinzuzufügen. Die Events werden nach Datum sortiert und das Datum bleibt sichtbar, während der Benutzer durch die Liste scrollt. Benutzer können Events zu ihrem Warenkorb hinzufügen und eine Übersicht aller hinzugefügten Events anzeigen. Durch Klicken auf die Event-Location wird ein neuer Tab mit der Google Maps Location geöffnet. Die Suchfunktion ermöglicht es Benutzern, Events zu finden, die einen bestimmten Suchbegriff im Titel enthalten.
 
-## Development server
+## Anforderungen
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Node.js
+- Angular CLI
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Klonen Sie das Repository auf Ihren lokalen Computer.
+2. Navigieren Sie in das Verzeichnis des Projekts und führen Sie `npm install` aus, um alle Abhängigkeiten zu installieren.
 
-## Build
+## Verfügbare Skripte
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- `npm run start`: Startet die Anwendung im Entwicklungsmodus und öffnet sie im Browser.
+- `npm run build`: Erstellt die Anwendung für die Produktion in den `dist` Ordner.
+- `npm run watch`: Baut die Anwendung und beobachtet Änderungen in den Dateien, um sie automatisch neu zu bauen.
 
-## Running unit tests
+## Zusätzliche Plugins
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- `@ngxs/devtools-plugin`: Ein Plugin für die NGXS State Management Library, das die Integration mit den Redux DevTools in Chrome und Firefox ermöglicht.
+- `@ngxs/logger-plugin`: Ein Plugin für die NGXS State Management Library, das Zustandsänderungen in der Konsole protokolliert.
+- `@ngxs/store`: Die NGXS State Management Library, eine state management Lösung für Angular, die auf dem Muster von Redux basiert, aber die Angular-Philosophie und -Syntax nutzt.
+- `immer`: Eine Bibliothek zur Arbeit mit unveränderlichen Zustandsstrukturen.
+- `material-icons`: Eine Bibliothek, die Material Design Icons zur Verfügung stellt.
+- `ngx-toastr`: Eine Bibliothek für Toast-Benachrichtigungen für Angular.
+- `rxjs`: Eine Bibliothek für reaktive Programmierung mit Observables.
+- `tslib`: Eine Runtime-Bibliothek für TypeScript, die Hilfsfunktionen enthält.
+- `zone.js`: Eine Bibliothek, die eine Zone-basierte Ausführungsumgebung für JavaScript bereitstellt, die für die Änderungserkennung in Angular benötigt wird.
