@@ -1,6 +1,6 @@
 # Events App
 
-Die Events App ist eine Anwendung, die es Benutzern ermöglicht, Events zu durchsuchen, zu sortieren und zu ihrem Warenkorb hinzuzufügen. Die Events werden nach Datum sortiert und das Datum bleibt sichtbar, während der Benutzer durch die Liste scrollt. Benutzer können Events zu ihrem Warenkorb hinzufügen und eine Übersicht aller hinzugefügten Events anzeigen. Durch Klicken auf die Event-Location wird ein neuer Tab mit der Google Maps Location geöffnet. Die Suchfunktion ermöglicht es Benutzern, Events zu finden, die einen bestimmten Suchbegriff im Titel enthalten.
+Die Events App ist eine Anwendung, die es Benutzern ermöglicht, Events zu durchsuchen und zu ihrem Warenkorb hinzuzufügen. Die Events werden nach Datum sortiert und das Datum bleibt sichtbar, während der Benutzer durch die Liste scrollt. Benutzer können Events zu ihrem Warenkorb hinzufügen und eine Übersicht aller hinzugefügten Events anzeigen. Durch Klicken auf die Event-Location wird ein neuer Tab mit der Google Maps Location geöffnet. Die Suchfunktion ermöglicht es Benutzern, Events zu finden, die einen bestimmten Suchbegriff im Titel enthalten.
 
 ## Anforderungen
 
