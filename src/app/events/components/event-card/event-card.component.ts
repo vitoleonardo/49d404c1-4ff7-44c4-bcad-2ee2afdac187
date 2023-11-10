@@ -9,7 +9,7 @@ import { fadeInOut } from 'src/app/shared/animations';
   animations: [fadeInOut]
 })
 export class EventCardComponent {
-  @Input() event: FilmEvent = {} as FilmEvent;
+  @Input({ required: true }) event: FilmEvent = {} as FilmEvent;
 
   @Output() onCardClicked: EventEmitter<FilmEvent> = new EventEmitter<FilmEvent>();
 
